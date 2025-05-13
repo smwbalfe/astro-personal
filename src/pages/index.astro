@@ -1,5 +1,5 @@
 ---
-
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -8,9 +8,53 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Simon Balfe | Software Engineer</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen font-sans">
+		<div class="container mx-auto px-4 py-12 max-w-3xl">
+			<header class="mb-20 text-center">
+				<div class="w-36 h-36 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-white">
+					<img src="/me.jpg" alt="Simon Balfe" class="w-full h-full object-cover" />
+				</div>
+				<h1 class="text-6xl font-bold text-gray-800 mb-4 tracking-tight">
+					Simon Balfe
+				</h1>
+				<p class="text-2xl text-gray-600 flex items-center justify-center mb-3">
+					<i class="fas fa-code mr-2"></i>Software Engineer
+				</p>
+				<div class="flex flex-col text-lg text-gray-600 space-y-1">
+					<p class="flex items-center justify-center">United Kingdom <span class="ml-2">🇬🇧</span></p>
+				</div>
+			</header>
+
+			<section class="mb-16 bg-white p-10 rounded-lg shadow-md">
+				<p class="text-xl text-gray-700 leading-relaxed mb-8 text-center font-light">
+					Recent graduate who realized <span class="bg-yellow-100 px-1 rounded">traditional software engineering</span> wasn't my true calling. Now embarking on an exciting journey as an <span class="bg-green-100 px-1 rounded">indie hacker</span> and <span class="bg-blue-100 px-1 rounded">solopreneur</span>, leveraging my <span class="bg-purple-100 px-1 rounded">technical skills</span> to build <span class="bg-pink-100 px-1 rounded">meaningful products</span> on my own terms.
+				</p>
+				<div class="flex justify-center space-x-12">
+					<a
+						href="https://linkedin.com/in/simon-balfe-49a4321b8"
+						class="text-gray-700 hover:text-gray-900 transition-colors flex flex-col items-center group"
+					>
+						<img src="/linkedin.svg" alt="LinkedIn" class="w-7 h-7 mb-2 group-hover:scale-110 transition-transform" />
+						<span class="font-medium">LinkedIn</span>
+					</a>
+					<a
+						href="https://x.com/simonbalfe"
+						class="text-gray-700 hover:text-gray-900 transition-colors flex flex-col items-center group"
+					>
+						<img src="/x.svg" alt="Twitter" class="w-7 h-7 mb-2 group-hover:scale-110 transition-transform" />
+						<span class="font-medium">Twitter</span>
+					</a>
+					<a
+						href="mailto:contact@example.com"
+						class="text-gray-700 hover:text-gray-900 transition-colors flex flex-col items-center group"
+					>
+						<img src="/email.svg" alt="Email" class="w-7 h-7 mb-2 group-hover:scale-110 transition-transform" />
+						<span class="font-medium">Email</span>
+					</a>
+				</div>
+			</section>
+		</div>
 	</body>
 </html>
